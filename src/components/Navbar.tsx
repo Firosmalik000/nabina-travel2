@@ -20,9 +20,9 @@ const Navbar = () => {
 
   const navItems = [
     { id: 'about', label: 'Tentang Kami' },
-    { id: 'vision', label: 'Visi & Misi' },
-    { id: 'service', label: 'Service' },
-    { id: 'whyus', label: 'Keunggulan' },
+    { id: 'visi', label: 'Visi & Misi' },
+    { id: 'Service', label: 'Service' },
+    { id: 'Keunggulan', label: 'Keunggulan' },
     { id: 'contact', label: 'Hubungi Kami' },
   ];
 
@@ -36,24 +36,24 @@ const Navbar = () => {
 
   return (
     <header className={`fixed top-0 z-50 w-full transition-colors duration-300 ${isScrolled ? 'bg-white shadow-lg text-black' : 'bg-none bg-opacity-70 text-white'}`}>
-      <div className="container mx-auto flex items-center justify-between h-[90px] px-4 md:px-8 lg:px-10">
+      <div className="container mx-auto flex items-center justify-between h-[90px] px-4 md:px-6 lg:px-8">
         {/* Logo Section */}
         <div className="flex items-center gap-2">
           <img src={LogoImage} className="w-8 md:w-16 transition-transform duration-200 transform hover:scale-105" alt="Logo Nabina Travel" />
-          <span className=" font-bold font-sans tracking-wide">Nabina Travel</span>
+          <h1 className=" font-bold tracking-wide">Nabina Travel</h1>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-x-6">
           {navItems.map((item) => (
-            <div key={item.id} onClick={() => handleScrollTo(item.id)} className="cursor-pointer font-semibold hover:text-blue-500 transition-colors duration-200 transform hover:scale-105">
+            <div key={item.id} onClick={() => handleScrollTo(item.id)} className="cursor-pointer font-semibold hover:text-blue-500 transition-colors duration-200 transform hover:scale-105 text-base">
               {item.label}
             </div>
           ))}
         </nav>
 
         {/* Mobile Menu Toggle */}
-        <button className="lg:hidden  focus:outline-none" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <button className="lg:hidden focus:outline-none" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? <FaTimes /> : <IoMenuSharp size={30} />}
         </button>
       </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
             <FaTimes size={30} />
           </button>
           {navItems.map((item) => (
-            <div key={item.id} onClick={() => handleScrollTo(item.id)} className="cursor-pointer  py-3 text-center hover:text-blue-400 transition-colors duration-200 transform hover:scale-105">
+            <div key={item.id} onClick={() => handleScrollTo(item.id)} className="cursor-pointer py-3 text-center hover:text-blue-400 transition-colors duration-200 transform hover:scale-105 text-base">
               {item.label}
             </div>
           ))}

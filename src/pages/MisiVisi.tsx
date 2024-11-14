@@ -2,7 +2,7 @@ import { FaBullseye, FaLightbulb } from 'react-icons/fa';
 
 const MisiVisi = () => {
   return (
-    <section id="misi-visi" className="py-16 bg-white text-gray-800">
+    <section id="visi" className="py-16 bg-white text-gray-800">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-blue-900 mb-8">Visi & Misi</h2>
         <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">

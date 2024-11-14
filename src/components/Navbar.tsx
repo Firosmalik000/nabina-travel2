@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import LogoImage from '../img/LOGO_NABINA_TRAVEL-removebg-preview.png';
-
 import { FaTimes } from 'react-icons/fa';
 import { IoMenuSharp } from 'react-icons/io5';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,7 +21,7 @@ const Navbar = () => {
   const navItems = [
     { id: 'about', label: 'Tentang Kami' },
     { id: 'visi', label: 'Visi & Misi' },
-    { id: 'Service', label: 'Service' },
+    { id: 'service', label: 'Service' },
     { id: 'Keunggulan', label: 'Keunggulan' },
     { id: 'contact', label: 'Hubungi Kami' },
   ];
@@ -39,37 +39,77 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between h-[90px] px-4 md:px-6 lg:px-8">
         {/* Logo Section */}
         <div className="flex items-center gap-2">
-          <img src={LogoImage} className="w-8 md:w-16 transition-transform duration-200 transform hover:scale-105" alt="Logo Nabina Travel" />
-          <h1 className=" font-bold tracking-wide">Nabina Travel</h1>
+          <motion.img
+            src={LogoImage}
+            className="w-8 md:w-16 transition-transform duration-200 transform hover:scale-105"
+            alt="Logo Nabina Travel"
+            whileHover={{ scale: 1.1 }} // Animation on hover to scale up
+            transition={{ duration: 0.3 }}
+          />
+          <motion.h1 className="font-bold tracking-wide" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+            Nabina Travel
+          </motion.h1>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-x-6">
-          {navItems.map((item) => (
-            <div key={item.id} onClick={() => handleScrollTo(item.id)} className="cursor-pointer font-semibold hover:text-blue-500 transition-colors duration-200 transform hover:scale-105 text-base">
+          {navItems.map((item, index) => (
+            <motion.div
+              key={item.id}
+              onClick={() => handleScrollTo(item.id)}
+              className="cursor-pointer font-semibold hover:text-blue-500 transition-colors duration-200 transform hover:scale-105 text-base relative"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: index * 0.1, duration: 0.5 }} // Fade in with delay
+            >
               {item.label}
-            </div>
+              <motion.div
+                className="absolute bottom-0 left-0 right-0 h-[2px] bg-blue-500 scale-x-0 origin-left transition-all duration-300"
+                whileHover={{ scaleX: 1 }} // Show underline on hover
+              />
+            </motion.div>
           ))}
         </nav>
 
         {/* Mobile Menu Toggle */}
         <button className="lg:hidden focus:outline-none" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          {isMenuOpen ? <FaTimes /> : <IoMenuSharp size={30} />}
+          {isMenuOpen ? (
+            <motion.div key="close" initial={{ scale: 0 }} animate={{ scale: 1 }} exit={{ scale: 0 }} transition={{ duration: 0.3 }}>
+              <FaTimes />
+            </motion.div>
+          ) : (
+            <motion.div key="menu" initial={{ scale: 0 }} animate={{ scale: 1 }} exit={{ scale: 0 }} transition={{ duration: 0.3 }}>
+              <IoMenuSharp size={30} />
+            </motion.div>
+          )}
         </button>
       </div>
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-gray-800 bg-opacity-90 text-white flex flex-col items-center justify-center pt-16 transition-all duration-300 ease-in-out">
+        <motion.div
+          className="lg:hidden fixed inset-0 bg-gray-800 bg-opacity-90 text-white flex flex-col items-center justify-center pt-16 transition-all duration-300 ease-in-out"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -50 }}
+          transition={{ duration: 0.5 }}
+        >
           <button onClick={() => setIsMenuOpen(false)} className="absolute top-4 right-4 focus:outline-none">
             <FaTimes size={30} />
           </button>
-          {navItems.map((item) => (
-            <div key={item.id} onClick={() => handleScrollTo(item.id)} className="cursor-pointer py-3 text-center hover:text-blue-400 transition-colors duration-200 transform hover:scale-105 text-base">
+          {navItems.map((item, index) => (
+            <motion.div
+              key={item.id}
+              onClick={() => handleScrollTo(item.id)}
+              className="cursor-pointer py-3 text-center hover:text-blue-400 transition-colors duration-200 transform hover:scale-105 text-base"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: index * 0.1, duration: 0.5 }} // Fade in with delay
+            >
               {item.label}
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       )}
     </header>
   );

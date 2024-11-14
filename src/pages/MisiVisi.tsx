@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaBullseye, FaLightbulb } from 'react-icons/fa';
 
 const MisiVisi = () => {
@@ -15,7 +14,10 @@ const MisiVisi = () => {
           <div className="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
             <FaBullseye className="text-blue-700 text-5xl mb-4 mx-auto" />
             <h3 className="text-2xl font-semibold text-blue-900 mb-2">Visi Kami</h3>
-            <p className="text-gray-700">Menjadi agen perjalanan terkemuka yang diakui secara global dalam memberikan layanan berkualitas tinggi dan pengalaman perjalanan yang tak terlupakan.</p>
+            <p className="text-gray-700">
+              Menjadi agen perjalanan terkemuka yang memberikan layanan terbaik dalam Manajemen Tour & Travel, dengan fokus pada kepuasan pelanggan dan inovasi layanan yang dapat diandalkan, serta terus berkembang untuk menjadi mitra
+              terpercaya dalam perjalanan domestik dan internasional.
+            </p>
           </div>
 
           {/* Misi Section */}
@@ -23,10 +25,11 @@ const MisiVisi = () => {
             <FaLightbulb className="text-green-700 text-5xl mb-4 mx-auto" />
             <h3 className="text-2xl font-semibold text-green-900 mb-2">Misi Kami</h3>
             <ul className="text-gray-700 list-disc list-inside text-left mt-4">
-              <li>Memberikan layanan berkualitas tinggi yang berfokus pada kebutuhan pelanggan.</li>
-              <li>Membangun hubungan jangka panjang dengan klien melalui kepercayaan dan kepuasan.</li>
-              <li>Mengembangkan inovasi dalam layanan wisata untuk memenuhi tren global.</li>
-              <li>Memprioritaskan keamanan dan kenyamanan pelanggan dalam setiap perjalanan.</li>
+              <li>Memberikan layanan perjalanan yang berkualitas dan terjangkau, baik untuk perjalanan domestik maupun internasional, dengan fleksibilitas biaya yang sesuai dengan kebutuhan pelanggan.</li>
+              <li>Membangun kemitraan jangka panjang dengan perusahaan-perusahaan dan klien bisnis untuk memenuhi berbagai kebutuhan perjalanan mereka.</li>
+              <li>Menyediakan solusi yang inovatif dan efisien dengan memanfaatkan Sumber Daya Manusia dan Teknologi Informasi yang handal dalam mendukung setiap proses bisnis pelanggan.</li>
+              <li>Terus berkembang dan meningkatkan kualitas layanan melalui pelatihan, pengembangan staf, dan teknologi terkini guna memenuhi ekspektasi pelanggan di setiap kesempatan.</li>
+              <li>Menjadi perusahaan yang berkomitmen terhadap keberlanjutan dan pertumbuhan yang memberikan dampak positif bagi industri Tour & Travel di Indonesia dan dunia.</li>
             </ul>
           </div>
         </div>

@@ -1,33 +1,28 @@
-import { FaMapMarkedAlt, FaSuitcase, FaUsers } from 'react-icons/fa';
+import AboutImage from '../img/about.jpg';
 
 const About = () => {
   return (
-    <section id="about" className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-blue-900 mb-6">Tentang Kami</h2>
-        <p className="text-lg text-gray-700 mb-10 mx-auto max-w-3xl">
-          Nabina Travel berkomitmen untuk memberikan pengalaman perjalanan yang luar biasa kepada setiap pelanggan. Dengan jaringan global dan pengalaman bertahun-tahun, kami siap membawa Anda ke tujuan impian Anda dengan aman dan nyaman.
+    <section
+      id="about"
+      className="relative w-full min-h-screen bg-cover bg-center transition-all duration-500"
+      style={{
+        backgroundImage: `url(${AboutImage})`,
+      }}
+    >
+      {/* Backdrop Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-end justify-center min-h-screen text-white text-right w-full md:w-[1000px] px-8 md:px-[100px] ml-auto">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">Tentang Kami</h1>
+        <p className="text-lg text-gray-200 mb-6 indent-6">
+          PT. Muhammad Nabina International Tour and Travel (MNI), didirikan pada 2018 dan sebelumnya dikenal sebagai CV. Emja Tour and Travel, adalah perusahaan terkemuka di bidang Manajemen Tour & Travel. Dengan reputasi yang solid dalam
+          melayani perjalanan domestik dan internasional, MNI berkembang pesat seiring kebutuhan pasar.
         </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <FaMapMarkedAlt className="text-blue-600 text-5xl mb-4 mx-auto" />
-            <h3 className="text-2xl font-semibold text-blue-900 mb-2">Destinasi Global</h3>
-            <p className="text-gray-600">Menyediakan perjalanan ke berbagai destinasi terkenal di seluruh dunia untuk petualangan yang tak terlupakan.</p>
-          </div>
-
-          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <FaSuitcase className="text-blue-600 text-5xl mb-4 mx-auto" />
-            <h3 className="text-2xl font-semibold text-blue-900 mb-2">Paket Wisata Terjangkau</h3>
-            <p className="text-gray-600">Pilihan paket wisata yang terjangkau dan disesuaikan untuk segala kebutuhan, dari tur pribadi hingga grup.</p>
-          </div>
-
-          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <FaUsers className="text-blue-600 text-5xl mb-4 mx-auto" />
-            <h3 className="text-2xl font-semibold text-blue-900 mb-2">Layanan Pelanggan Profesional</h3>
-            <p className="text-gray-600">Tim kami yang profesional selalu siap membantu Anda untuk memastikan perjalanan yang aman dan nyaman.</p>
-          </div>
-        </div>
+        <p className="text-lg text-gray-200 indent-6">
+          Sebagai mitra terpercaya, MNI menjalin kerja sama dengan berbagai perusahaan untuk memenuhi kebutuhan perjalanan bisnis dan wisata. Didukung oleh tim profesional berpengalaman dan layanan pelanggan 24 jam, MNI berkomitmen untuk
+          memberikan solusi perjalanan yang efisien dan personal. Dengan dedikasi pada inovasi teknologi dan kualitas sumber daya manusia, MNI terus berupaya memberikan layanan yang unggul dan bernilai tinggi bagi pelanggan.
+        </p>
       </div>
     </section>
   );

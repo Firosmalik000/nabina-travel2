@@ -10,7 +10,7 @@ const Management = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-10 px-6 sm:px-12">
+    <div className="bg-gray-200 py-10 px-6 sm:px-12">
       <motion.div className="text-center mb-8" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <h2 className="text-3xl font-bold text-gray-800">MANAGEMENT MUHAMMAD NABINA</h2>
       </motion.div>

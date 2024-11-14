@@ -57,16 +57,15 @@ const Navbar = () => {
             <motion.div
               key={item.id}
               onClick={() => handleScrollTo(item.id)}
-              className="cursor-pointer font-semibold hover:text-blue-500 transition-colors duration-200 transform hover:scale-105 text-base relative"
+              className="cursor-pointer font-semibold group hover:text-blue-500 transition-colors duration-200 transform hover:scale-105 text-base relative"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: index * 0.1, duration: 0.5 }} // Fade in with delay
             >
               {item.label}
-              <motion.div
-                className="absolute bottom-0 left-0 right-0 h-[2px] bg-blue-500 scale-x-0 origin-left transition-all duration-300"
-                whileHover={{ scaleX: 1 }} // Show underline on hover
-              />
+              <div className="absolute bg-red-500 transform translate-x-5 group-hover:translate-x-0 transition-all duration-200 ease-in-out">
+                <hr />
+              </div>
             </motion.div>
           ))}
         </nav>

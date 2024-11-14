@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const MisiVisi = () => {
   return (
-    <section id="visi" className="py-16 bg-blue-100 text-gray-800">
+    <section id="visi" className="py-16 bg-gray-100 text-gray-800">
       <div className="container mx-auto px-4 text-center">
         <motion.h2 className="text-4xl font-bold text-blue-900 mb-8" initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
           Visi & Misi

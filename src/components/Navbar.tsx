@@ -22,7 +22,7 @@ const Navbar = () => {
     { id: 'about', label: 'Tentang Kami' },
     { id: 'visi', label: 'Visi & Misi' },
     { id: 'service', label: 'Service' },
-    { id: 'Keunggulan', label: 'Keunggulan' },
+    { id: 'keunggulan', label: 'Keunggulan' },
     { id: 'contact', label: 'Hubungi Kami' },
   ];
 
@@ -41,9 +41,9 @@ const Navbar = () => {
         <div className="flex items-center gap-2">
           <motion.img
             src={LogoImage}
-            className="w-8 md:w-16 transition-transform duration-200 transform hover:scale-105"
+            className="w-8 md:w-16 transition-transform duration-300 transform hover:scale-115"
             alt="Logo Nabina Travel"
-            whileHover={{ scale: 1.1 }} // Animation on hover to scale up
+            whileHover={{ scale: 2.1 }} // Animation on hover to scale up
             transition={{ duration: 0.3 }}
           />
           <motion.h1 className="font-bold tracking-wide" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>

@@ -1,21 +1,31 @@
 import { FaWhatsapp } from 'react-icons/fa';
 import Navbar from './components/Navbar';
-import About from './pages/About';
+import About from './pages/Keunggulanlainnya.tsx.tsx';
 import Contact from './pages/Contact';
 import Hero from './pages/Hero';
-import Keunggulann from './pages/Keunggulann';
+// import Keunggulann from './pages/Keunggulann';
 import Management from './pages/Management';
 import MisiVisi from './pages/MisiVisi';
 import Service from './pages/Service';
+import KeunggulanSec from './pages/KeunggulanSec';
+import KeunggulanLingkup from './pages/KeunggulanLingkup';
+import KeunggulanDukungan from './pages/KeunggulanDukungan';
+import KeunggulanLingkuppel from './pages/KeunggulanLingkuppel';
+import KeunggulanLainnya from './pages/KeunggulanLainnya.tsx';
 
 function App() {
   return (
     <div className="text-3xl font-bold text-center">
       <Navbar />
       <Hero />
+      <KeunggulanSec />
+      <KeunggulanLingkup />
+      <KeunggulanDukungan />
+      <KeunggulanLingkuppel />
+      <KeunggulanLainnya />
       <About />
       <MisiVisi />
-      <Keunggulann />
+      {/* <Keunggulann /> */}
       <Management />
       <Service />
       <Contact />

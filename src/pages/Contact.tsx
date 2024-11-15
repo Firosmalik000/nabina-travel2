@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <footer className="bg-gray-800 text-gray-200 py-16">
+    <section id="contact" className="bg-gray-800 text-gray-200 py-16">
       <div className="container mx-auto px-4 text-center lg:text-left">
         {/* Company Info */}
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.5 }} viewport={{ once: true }} className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
@@ -23,11 +23,13 @@ const Contact = () => {
             </div>
             <div className="flex justify-center md:justify-start gap-x-4">
               <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 0.5, duration: 0.5 }} viewport={{ once: true }} className="flex items-center justify-center  w-10 h-10 rounded-full bg-green-500">
-                <FaWhatsapp className="text-white text-xl" />
+                <a href="https://wa.me/+6281282200084">
+                  <FaWhatsapp className="text-white text-xl" />
+                </a>
               </motion.div>
-              <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 0.6, duration: 0.5 }} viewport={{ once: true }} className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-400">
+              {/* <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 0.6, duration: 0.5 }} viewport={{ once: true }} className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-400">
                 <FaPhoneAlt className="text-white text-xl" />
-              </motion.div>
+              </motion.div> */}
             </div>
           </motion.div>
 
@@ -56,7 +58,7 @@ const Contact = () => {
           <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} PT. Muhammad Nabina International. All rights reserved.</p>
         </motion.div>
       </div>
-    </footer>
+    </section>
   );
 };
 

@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 
 const Service = () => {
   return (
-    <section id="service" className="py-16 bg-gray-50 text-gray-800">
+    <section id="service" className="py-16 bg-red-700 ">
       <div className="container mx-auto px-4 text-center">
-        <motion.h2 className="text-4xl font-bold text-blue-900 mb-8" initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+        <motion.h2 className="text-4xl font-bold text-white mb-8" initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
           Layanan Kami
         </motion.h2>
 
-        <motion.p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto" initial={{ opacity: 0, y: -30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true }}>
+        <motion.p className="text-lg text-white mb-12 max-w-3xl mx-auto" initial={{ opacity: 0, y: -30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true }}>
           Kami menyediakan berbagai layanan wisata yang disesuaikan dengan kebutuhan Anda. Berikut adalah layanan unggulan kami dengan tim profesional yang siap membantu.
         </motion.p>
 

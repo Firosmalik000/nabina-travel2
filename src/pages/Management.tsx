@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Managementimg from '../img/management.jpeg';
 
 const Management = () => {
   const managementList = [
@@ -10,9 +11,15 @@ const Management = () => {
   ];
 
   return (
-    <div className="bg-gray-200 py-10 px-6 sm:px-12">
+    <div
+      className="bg-gray-200 py-10 px-6 sm:px-12"
+      style={{
+        backgroundImage: `url(${Managementimg})`,
+        backgroundSize: 'cover',
+      }}
+    >
       <motion.div className="text-center mb-8" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-        <h2 className="text-3xl font-bold text-gray-800">MANAGEMENT MUHAMMAD NABINA</h2>
+        <h2 className="text-3xl font-bold text-white ">MANAGEMENT MUHAMMAD NABINA</h2>
       </motion.div>
 
       <div className="max-w-3xl mx-auto space-y-6 hover:shadow-lg">

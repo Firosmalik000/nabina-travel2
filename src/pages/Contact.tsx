@@ -23,7 +23,7 @@ const Contact = () => {
             </div>
             <div className="flex justify-center md:justify-start gap-x-4">
               <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 0.5, duration: 0.5 }} viewport={{ once: true }} className="flex items-center justify-center  w-10 h-10 rounded-full bg-green-500">
-                <a href="https://wa.me/+6281282200084">
+                <a href="https://wa.me/+6285785555410">
                   <FaWhatsapp className="text-white text-xl" />
                 </a>
               </motion.div>

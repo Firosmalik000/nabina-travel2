@@ -29,8 +29,8 @@ function App() {
       <Management />
       <Service />
       <Contact />
-      <a href="https://wa.me/+6281282200084" className="fixed bottom-5 w-[50px] h-[50px]  right-5 rounded-full bg-green-500 flex items-center justify-center z-[500]">
-        <FaWhatsapp className="w-10 h-10 text-white" />
+      <a href="https://wa.me/+6285785555410" className="fixed bottom-5 md:bottom-[50px] w-[70px] h-[70px]  md:w-[80px] md:h-[80px] right-5 md:right-[50px] rounded-full bg-green-500 flex items-center justify-center z-[500] animate-bounce">
+        <FaWhatsapp className="md:w-[60px] md:h-[60px] w-10 h-10  text-white" />
       </a>
     </div>
   );

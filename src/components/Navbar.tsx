@@ -21,8 +21,8 @@ const Navbar = () => {
   const navItems = [
     { id: 'about', label: 'Tentang Kami' },
     { id: 'visi', label: 'Visi & Misi' },
-    { id: 'service', label: 'Service' },
-    { id: 'keunggulan', label: 'Keunggulan' },
+    { id: 'management', label: 'Managemen' },
+    { id: 'service', label: 'Layanan' },
     { id: 'contact', label: 'Hubungi Kami' },
   ];
 

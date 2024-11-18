@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section id="about" className="w-full bg-gray-50 py-16">
+    <section id="about" className="w-full bg-gray-50 py-16 md:px-[100px] px-6">
       <div className="container mx-auto flex flex-col md:flex-row items-center md:items-start">
         {/* Image Section */}
         <motion.div className="w-[80%] md:w-1/2 flex justify-center  min-h-1 mb-8 md:mb-0" initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>

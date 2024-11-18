@@ -8,19 +8,25 @@ const Hero = () => {
       className="relative w-full min-h-screen bg-cover bg-center transition-all duration-500"
       style={{
         backgroundImage: `url(${HeroImage})`,
-        backgroundSize: 'cover',
       }}
     >
       {/* Backdrop Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-start justify-center min-h-screen text-white text-center px-[100px]">
-        <motion.h1 initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="text-4xl md:text-6xl font-bold mb-4">
-          Welcome to Nabina Travel
+      <div className="relative z-10 flex flex-col items-center md:items-start justify-center min-h-screen text-white px-6 md:px-20 lg:px-40">
+        <motion.h1 initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 text-center md:text-left">
+          Welcome to
         </motion.h1>
-
-        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }} className="text-lg md:text-2xl font-medium">
+        <motion.span
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          className="block text-2xl sm:text-4xl lg:text-7xl font-extrabold text-center md:text-left max-w-full md:max-w-4xl mb-4"
+        >
+          Muhammad Nabina International Tour and Travel
+        </motion.span>
+        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }} className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-center md:text-left">
           Discover new adventures with us
         </motion.p>
       </div>

@@ -44,14 +44,7 @@ const KeunggulanDukungan = () => {
           }}
           viewport={{ once: true }}
         >
-          {[
-            'Sistem komputerisasi terhubung global',
-            'Galileo Reservation System untuk travel agent',
-            'Sistem pembukuan Garuda Indonesia',
-            'LAN ALTEA SYSTEM untuk operasional internal',
-            'Akses internet untuk data global',
-            'Jaringan telepon & fax memadai',
-          ].map((item, index) => (
+          {['Sistem komputerisasi terhubung global', 'Akses internet untuk data global', 'Jaringan telepon & fax memadai'].map((item, index) => (
             <motion.li key={index} className="text-sm md:text-base lg:text-lg" initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: index * 0.2 }} viewport={{ once: true }}>
               {item}
             </motion.li>

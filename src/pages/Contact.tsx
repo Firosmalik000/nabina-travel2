@@ -1,4 +1,4 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa';
 import LogoImage from '../img/LOGO_NABINA_TRAVEL-removebg-preview.png';
 import { motion } from 'framer-motion';
 
@@ -11,7 +11,7 @@ const Contact = () => {
           {/* About Us */}
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3, duration: 0.5 }} viewport={{ once: true }} className="flex justify-center md:justify-start items-center gap-2">
             <img src={LogoImage} className="w-8 md:w-16 transition-transform duration-200 transform hover:scale-105" alt="Logo Nabina Travel" />
-            <h1 className="font-bold tracking-wide">Nabina Travel</h1>
+            <h1 className="font-bold tracking-wide">MNI Travel</h1>
           </motion.div>
 
           {/* Address */}
@@ -23,13 +23,20 @@ const Contact = () => {
             </div>
             <div className="flex justify-center md:justify-start gap-x-4">
               <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 0.5, duration: 0.5 }} viewport={{ once: true }} className="flex items-center justify-center  w-10 h-10 rounded-full bg-green-500">
-                <a href="https://wa.me/+6285785555410">
+                <a href="https://wa.me/+6281282200084">
                   <FaWhatsapp className="text-white text-xl" />
                 </a>
               </motion.div>
-              {/* <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 0.6, duration: 0.5 }} viewport={{ once: true }} className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-400">
-                <FaPhoneAlt className="text-white text-xl" />
-              </motion.div> */}
+              <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 0.6, duration: 0.5 }} viewport={{ once: true }} className="flex items-center justify-center w-10 h-10 rounded-full bg-red-500">
+                <a href="https:instagram.com/muhammad_nabina_international">
+                  <FaInstagram className="text-white text-xl" />
+                </a>
+              </motion.div>
+              <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 0.8, duration: 0.5 }} viewport={{ once: true }} className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500">
+                <a href="https://www.facebook.com/share/154HDdVp8j/">
+                  <FaFacebook className="text-white text-xl" />
+                </a>
+              </motion.div>
             </div>
           </motion.div>
 
@@ -39,13 +46,23 @@ const Contact = () => {
             <ul className="space-y-4">
               <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.5 }} viewport={{ once: true }} className="flex justify-center md:justify-start items-center space-x-3">
                 <FaWhatsapp className="text-green-500" />
-                <span className="text-sm">WhatsApp Hotline: +62 81282200084</span>
+                <span className="text-sm">WhatsApp Hotline: +62 812 8220 0084</span>
+              </motion.li>
+
+              <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.5 }} viewport={{ once: true }} className="flex justify-center md:justify-start items-center space-x-3">
+                <FaInstagram className="text-red-500" />
+                <span className="text-sm">Instagram: @muhammad_nabina_international</span>
               </motion.li>
               <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.7, duration: 0.5 }} viewport={{ once: true }} className="flex justify-center md:justify-start items-center space-x-3">
-                <FaPhoneAlt className="text-blue-400" />
-                <span className="text-sm">Telepon: +62 123 456 789</span>
+                <FaFacebook className="text-blue-500" />
+                <span className="text-sm">Facebook: Muhammad Nabina</span>
               </motion.li>
+
               <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.8, duration: 0.5 }} viewport={{ once: true }} className="flex justify-center md:justify-start items-center space-x-3">
+                <FaPhoneAlt className="text-blue-400" />
+                <span className="text-sm">Telepon: +62 857 8555 5410</span>
+              </motion.li>
+              <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.9, duration: 0.5 }} viewport={{ once: true }} className="flex justify-center md:justify-start items-center space-x-3">
                 <FaEnvelope className="text-yellow-400" />
                 <span className="text-sm">Email: pp.muhammadnabina@gmail.com</span>
               </motion.li>

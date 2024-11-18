@@ -47,7 +47,7 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
           />
           <motion.h1 className="font-bold tracking-wide" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-            Nabina Travel
+            MNI Travel
           </motion.h1>
         </div>
 

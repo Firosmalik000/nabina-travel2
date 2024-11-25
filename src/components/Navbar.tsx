@@ -60,7 +60,7 @@ const Navbar = () => {
               className="cursor-pointer font-semibold group hover:text-blue-500 transition-colors duration-200 transform hover:scale-105 text-base relative"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: index * 0.1, duration: 0.5 }} // Fade in with delay
+              transition={{ delay: index * 0.2, duration: 0.5 }} // Fade in with delay
             >
               {item.label}
               <div className="absolute bg-red-500 transform translate-x-5 group-hover:translate-x-0 transition-all duration-200 ease-in-out">

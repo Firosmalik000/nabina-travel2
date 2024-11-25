@@ -28,7 +28,7 @@ const Service = () => {
             {
               icon: <FaUsers className="text-yellow-600 text-5xl mb-4 mx-auto" />,
               title: 'Haji & Umroh',
-              details: ['1. Manager: Herianto', '2. Consultant: Rina Sulaiman', '3. Operational: M. Umar', '4. Operational: Sahril', '5. Operational: Kurniawan'],
+              details: ['1. Manager: Herianto', '2. Consultant: Rina Sulaiman', '3. Operational: M. Umar', '4. Operational: Martina', '5. Operational: Kurniawan'],
             },
             {
               icon: <FaPassport className="text-red-600 text-5xl mb-4 mx-auto" />,

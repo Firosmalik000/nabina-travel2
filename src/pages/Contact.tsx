@@ -2,6 +2,8 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaInstagram, FaFace
 import LogoImage from '../img/LOGO_NABINA_TRAVEL-removebg-preview.png';
 import { motion } from 'framer-motion';
 
+import { MdOutlineMail } from 'react-icons/md';
+
 const Contact = () => {
   return (
     <section id="contact" className="bg-gray-800 text-gray-200 py-16">
@@ -35,6 +37,11 @@ const Contact = () => {
               <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 0.8, duration: 0.5 }} viewport={{ once: true }} className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500">
                 <a href="https://www.facebook.com/share/154HDdVp8j/">
                   <FaFacebook className="text-white text-xl" />
+                </a>
+              </motion.div>
+              <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 1, duration: 0.5 }} viewport={{ once: true }} className="flex items-center justify-center w-10 h-10 rounded-full bg-red-500">
+                <a href="mailto:pp.muhammadnabina@gmail.com">
+                  <MdOutlineMail className="text-white text-xl" />
                 </a>
               </motion.div>
             </div>

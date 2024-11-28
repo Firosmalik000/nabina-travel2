@@ -26,8 +26,8 @@ const Hero = () => {
         >
           Muhammad Nabina International Tour and Travel
         </motion.span>
-        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }} className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-center md:text-left">
-          Discover new adventures with us
+        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }} className="text-base sm:text-lg md:text-xl lg:text-3xl font-bold text-center md:text-left">
+          Mewujudkan Impian Anda ke Tanah Suci
         </motion.p>
       </div>
     </section>

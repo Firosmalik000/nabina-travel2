@@ -23,7 +23,7 @@ const Service = () => {
             {
               icon: <FaHotel className="text-green-600 text-5xl mb-4 mx-auto" />,
               title: 'MICE & Travel Document',
-              details: ['1. Coord. Tour & Group Div.: Padila', '2. Tour Consultant: Otoman', '3. Tour Consultant: Fauzi'],
+              details: ['1. Coord. Tour & Group : Edi Saputra', '2. Tour Consultant: Andika', '3. Tour Consultant: Fauzi'],
             },
             {
               icon: <FaUsers className="text-yellow-600 text-5xl mb-4 mx-auto" />,

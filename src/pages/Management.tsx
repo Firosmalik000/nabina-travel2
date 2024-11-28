@@ -10,10 +10,10 @@ interface ManagementMember {
 const Management: React.FC = () => {
   const managementList: ManagementMember[] = [
     { title: 'Komisaris Utama', name: 'Kiki Mikail' },
-    { title: 'Komisaris', name: 'Rahmat Wiguna' },
-    { title: 'Komisaris', name: 'Ahmad Hakiki' },
+    { title: 'Komisaris', name: ['Rahmat Wiguna', 'Ahmad Hakiki', 'Otoman'] },
+
     { title: 'Direktur Utama', name: 'Tri Tirtasari' },
-    { title: 'Direktur', name: [" Ahmad Rifa'i", 'Sholihin', 'Abdul Kholid'] },
+    { title: 'Direktur', name: [" Ahmad Rifa'i", 'Sholihin', 'Abdul Kholid', 'Padila'] },
     { title: 'Manager Umum', name: 'Intan Muziati' },
     { title: 'Keuangan', name: ['Tasya Amelia Sholehah', 'Leni Yulianingsih'] }, // Nama ganda
   ];
